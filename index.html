@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pranav A — Data Analyst & Software Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Cabinet+Grotesk:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Canvas for 3D particles -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-brand">
+      <div class="nav-logo">Pranav A K </div>
+      <div class="nav-tagline">Aspiring Data Analyst | Software Engineer</div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1 class="hero-title" id="heroTitle">
+  <span class="line" style="--delay:0.1s">
+    <span class="char-wrap">
+      <span class="char">P</span><span class="char">r</span><span class="char">a</span><span class="char">n</span><span class="char">a</span><span class="char">v</span>
+    </span>
+  </span>
+</h1>
+      <p class="hero-subtitle reveal-up" style="--delay:0.35s">
+        Passionate about building modern applications and solving real-world problems using technology. I enjoy working with programming, web development, and data-driven projects.
+      </p>
+      <div class="hero-actions reveal-up" style="--delay:0.5s">
+        <a href="#projects" class="btn btn-primary">
+          <span>View Work</span>
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+        <a href="resume.pdf" target="_blank" class="btn btn-ghost">View Resume</a>
+      </div>
+    </div>
+
+    <div class="hero-photo-wrap reveal-up" style="--delay:0.3s">
+      <div class="hero-photo-ring">
+        <div class="hero-photo-inner">
+          <img src="profile.jpg" alt="Pranav A K" class="hero-photo-img" />
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-label reveal-up">01 — About</div>
+      <div class="about-grid">
+        <div class="about-text reveal-up">
+          <h2 class="section-title">Turning data<br/><em>into decisions.</em></h2>
+          <p>I'm an aspiring Data Analyst and Software Engineer in my final year of Computer Science Engineering at Meenakshi College. I thrive at the intersection of machine learning, analytics, and clean software design.</p>
+          <p>With real-world internship experience at <strong>Bluestock Fintech</strong> and <strong>Apollo Hospital</strong> and <strong>Neo Orange Technology</strong>, I've built pipelines, dashboards, and predictive models that actually move the needle.</p>
+          <div class="about-links">
+            <a href="https://www.linkedin.com/in/pranav-a-89b6b32a0" target="_blank" class="icon-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+            <a href="mailto:pranavarumugamcse@gmail.com" class="icon-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Email
+               </a>
+               <a href="https://github.com/Pranav-123sai" target="_blank" class="icon-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="about-visual reveal-up" style="--delay:0.2s">
+          <div class="floating-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+          </div>
+          <div class="edu-card glass-card">
+            <div class="edu-icon">🎓</div>
+            <div>
+              <div class="edu-degree">B.E. Computer Science</div>
+              <div class="edu-school">Meenakshi College of Engineering</div>
+              <div class="edu-year">2022 – 2026 · CGPA 7.7/10</div>
+            </div>
+          </div>
+          <div class="edu-card glass-card" style="margin-top:1rem">
+            <div class="edu-icon">📘</div>
+            <div>
+              <div class="edu-degree">Higher Secondary</div>
+              <div class="edu-school">Grace Higher Secondary School</div>
+              <div class="edu-year">2020 – 2022 · 77%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SKILLS -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-label reveal-up">02 — Skills</div>
+      <h2 class="section-title reveal-up">Technical<br/><em>Arsenal</em></h2>
+      <div class="skills-grid">
+        <div class="skill-category reveal-up" style="--delay:0s">
+          <div class="skill-cat-icon">⚡</div>
+          <h3>Programming</h3>
+          <div class="skill-pills">
+            <span>Python</span><span>Java</span><span>C</span><span>C++</span>
+          </div>
+        </div>
+        <div class="skill-category reveal-up" style="--delay:0.1s">
+          <div class="skill-cat-icon">📊</div>
+          <h3>Data &amp; Analytics</h3>
+          <div class="skill-pills">
+            <span>Pandas</span><span>NumPy</span><span>Scikit-learn</span><span>Power BI</span><span>Tableau</span><span>Excel</span>
+          </div>
+        </div>
+        <div class="skill-category reveal-up" style="--delay:0.2s">
+          <div class="skill-cat-icon">🌐</div>
+          <h3>Web</h3>
+          <div class="skill-pills">
+            <span>HTML</span><span>React</span><span>Node.js</span><span>Express.js</span><span>TailwindCSS</span>
+          </div>
+        </div>
+        <div class="skill-category reveal-up" style="--delay:0.3s">
+          <div class="skill-cat-icon">🗄️</div>
+          <h3>Databases</h3>
+          <div class="skill-pills">
+            <span>SQL</span><span>MongoDB</span>
+          </div>
+        </div>
+        <div class="skill-category reveal-up" style="--delay:0.4s">
+          <div class="skill-cat-icon">🛠️</div>
+          <h3>Tools</h3>
+          <div class="skill-pills">
+            <span>Git</span><span>GitHub</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section experience" id="experience">
+  <div class="container">
+    <div class="section-label reveal-up">03 — Experience</div>
+    <h2 class="section-title reveal-up">Where I've<br/><em>Worked</em></h2>
+    <div class="timeline">
+
+      <!-- 1. Bluestock Fintech -->
+      <div class="timeline-item reveal-up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-role">Software Development Engineer (SDE) Intern</h3>
+              <div class="exp-company">Bluestock Fintech</div>
+            </div>
+            <div class="exp-date">Feb 2026 – Mar 2026</div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Improved UI/UX by optimizing layouts and ensuring responsive design.</li>
+            <li>Assisted in designing, developing, and testing software modules, improving system functionality and performance during the internship period.</li>
+            <li>Collaborated with the development team under the guidance of Project Manager, gaining hands-on experience in industry-level workflows and best practices.</li>
+          </ul>
+          <div class="exp-tags">
+            <span>Coding</span><span>Debugging</span><span>Application Building</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Neo Orange Technology -->
+      <div class="timeline-item reveal-up" style="--delay:0.1s">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-role">Data Analyst Intern</h3>
+              <div class="exp-company">Neo Orange Technology</div>
+            </div>
+            <div class="exp-date">Aug 2025 – Sep 2025</div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Worked on real-world datasets to perform data cleaning, analysis, and visualization.</li>
+            <li>Collaborated with mentors to deliver insights for business use cases.</li>
+            <li>Built predictive models using Python and Scikit-learn.</li>
+          </ul>
+          <div class="exp-tags">
+            <span>Python</span><span>Scikit-learn</span><span>Data Analysis</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Apollo Hospital -->
+      <div class="timeline-item reveal-up" style="--delay:0.2s">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-role">Junior Data Analyst Intern</h3>
+              <div class="exp-company">Apollo Hospital Pvt Ltd</div>
+            </div>
+            <div class="exp-date">Mar 2024 – May 2024</div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Analyzed patient and clinical data to support hospital decision-making.</li>
+            <li>Created dashboards using Power BI / Tableau to monitor KPIs.</li>
+            <li>Integrated multiple data sources to improve reporting accuracy.</li>
+          </ul>
+          <div class="exp-tags">
+            <span>Power BI</span><span>Tableau</span><span>Healthcare Data</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- PROJECTS -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-label reveal-up">04 — Projects</div>
+      <h2 class="section-title reveal-up">What I've<br/><em>Built</em></h2>
+      <div class="projects-grid"><div class="project-card tilt-card reveal-up glass-card">
+          <div class="project-num">01</div>
+          <div class="project-icon">🖥️</div>
+          <h3 class="project-title">Verify360 : Complete Scam Verification System  </h3>
+          <p class="project-desc">It is a web-based verification system designed to detect and prevent online scams, fake identities, and fraudulent activities.</p>
+          <div class="project-tags">
+            <span>Python</span><span>Flask</span><span>Sqlite</span><span>CSV</span>
+          </div>
+          <div class="project-badge">JavaScript</div>
+        </div>
+        <div class="project-card tilt-card reveal-up glass-card">
+          <div class="project-num">02</div>
+          <div class="project-icon">🎬</div>
+          <h3 class="project-title">IMDB Movie Recommendation System</h3>
+          <p class="project-desc">Hybrid recommendation engine using collaborative and content-based filtering. Led a team to address data sparsity and cold-start problems.</p>
+          <div class="project-tags">
+            <span>Python</span><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span>
+          </div>
+          <div class="project-badge">Team Leader</div>
+        </div>
+        <div class="project-card tilt-card reveal-up glass-card" style="--delay:0.15s">
+          <div class="project-num">03</div>
+          <div class="project-icon">🚦</div>
+          <h3 class="project-title">IoT Smart Traffic Diversion System</h3>
+          <p class="project-desc">Real-time IoT-based traffic management using sensors and Blynk. Monitors vehicle density to reduce congestion and improve road safety.</p>
+          <div class="project-tags">
+            <span>IoT</span><span>Blynk</span><span>Sensors</span><span>Embedded</span>
+          </div>
+          <div class="project-badge">Engineering</div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="section achievements" id="achievements">
+    <div class="container">
+      <div class="section-label reveal-up">05 — Achievements</div>
+      <h2 class="section-title reveal-up">Recognition &amp;<br/><em>Milestones</em></h2>
+      <div class="achievements-grid">
+        <div class="achievement-item reveal-up glass-card">
+          <div class="ach-icon">🏆</div>
+          <p>Active on <strong>CodeChef</strong> and <strong>Kaggle</strong> competitive platforms</p>
+        </div>
+        <div class="achievement-item reveal-up glass-card" style="--delay:0.1s">
+          <div class="ach-icon">💡</div>
+          <p>Participated in <strong>Smart India Hackathon</strong> and IEEE technical events</p>
+        </div>
+        <div class="achievement-item reveal-up glass-card" style="--delay:0.2s">
+          <div class="ach-icon">📜</div>
+          <p>Certifications from <strong>Microsoft, Cisco, NPTEL, Coursera</strong> &amp; Udemy</p>
+        </div>
+        <div class="achievement-item reveal-up glass-card" style="--delay:0.3s">
+          <div class="ach-icon">🚀</div>
+          <p>Built end-to-end engineering projects with <strong>Python, ML</strong> &amp; data analysis</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-label reveal-up">06 — Contact</div>
+      <div class="contact-inner">
+        <h2 class="contact-title reveal-up">Let's build something<br/><em>remarkable.</em></h2>
+        <p class="contact-sub reveal-up">Open to full-time roles, internships, and freelance projects.</p>
+        <div class="contact-links reveal-up">
+          <a href="mailto:pranavarumugamcse@gmail.com" class="contact-card glass-card">
+            <div class="cc-icon">✉️</div>
+            <div>
+              <div class="cc-label">Email</div>
+              <div class="cc-val">pranavarumugamcse@gmail.com</div>
+            </div>
+          </a>
+          <a href="tel:+918939042886" class="contact-card glass-card">
+            <div class="cc-icon">📞</div>
+            <div>
+              <div class="cc-label">Phone</div>
+              <div class="cc-val">+91 89390 42886</div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/pranav-a-89b6b32a0" target="_blank" class="contact-card glass-card">
+            <div class="cc-icon">💼</div>
+            <div>
+              <div class="cc-label">LinkedIn</div>
+              <div class="cc-val">pranav-a-89b6b32a0</div>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/pranavvv___ak" target="_blank" class="contact-card glass-card">
+            <div class="cc-icon">📸</div>
+            <div>
+              <div class="cc-label">Instagram</div>
+              <div class="cc-val">@pranavvv___ak</div>
+            </div>
+          </a>
+          <a href="https://github.com/Pranav-123sai" target="_blank" class="contact-card glass-card">
+            <div class="cc-icon">🐙</div>
+            <div>
+              <div class="cc-label">GitHub</div>
+              <div class="cc-val">Pranav-123sai</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">Pranavvv___AK</span>
+        <span>© 2026 Pranav A · Chennai, India</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
